@@ -19,7 +19,7 @@ uploaded_file = st.file_uploader("Choose a CSV file", type="csv")
 
 # Dropdown for missing value method selection
 st.sidebar.header("Choose a method to handle missing values")
-missing_value_method = st.sidebar.selectbox(
+missing_value_method = st.sidebar.selectbox("Handle NULL",
     ("fillna - zero or unknown", "fillna - mean or mode", "bfill", "ffill", "interpolate", "mice")
 )
 
